@@ -1,2 +1,5 @@
 # yanstd888.github.io
-Personal site of Yanstd (Muhammad Dian) - independent builder from Batam, Indonesia. AI gateway, free .ai.id subdomains, prose linter, MT5 Expert Advisors.
+# yans.ai.id
+# yanstd.web.id
+# aiclub.ai.id
+Personal site of Yanstd (Muhammad Dian) Founder of aiclub.ai.id
