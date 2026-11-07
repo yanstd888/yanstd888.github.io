@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yanstd (Muhammad Dian) - Independent Builder, Batam: AI Gateway, Subdomain .ai.id Gratis, Expert Advisor MT5</title>
+<meta name="description" content="Yanstd membangun produk AI dan infrastruktur developer dari Batam, Indonesia: 9RouterX AI gateway open source, subdomain .ai.id gratis, humanizer-lint, Node2Mint, dan Expert Advisor MetaTrader 5.">
+<link rel="canonical" href="https://yanstd888.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yanstd">
+<meta property="og:title" content="Yanstd: Independent Builder dari Batam">
+<meta property="og:description" content="AI gateway open source, subdomain .ai.id gratis, prose linter, dan Expert Advisor MT5. Semua dibangun dan dipakai sendiri.">
+<meta property="og:url" content="https://yanstd888.github.io/">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230D1117'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='36' font-weight='700' fill='%23FFD23F' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://yanstd888.github.io/#person",
+      "name": "Muhammad Dian",
+      "alternateName": ["Yanstd", "yanstd888", "Yan Std"],
+      "url": "https://yanstd888.github.io/",
+      "sameAs": [
+        "https://github.com/yanstd888",
+        "https://yans.ai.id/",
+        "https://aiclub.ai.id/",
+        "https://yanstd.web.id/",
+        "https://t.me/aiclub_id"
+      ],
+      "homeLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Batam", "addressCountry": "ID" } },
+      "knowsAbout": ["AI API gateway", "LLM routing", "subdomain .ai.id gratis", "MetaTrader 5 Expert Advisor", "Smart Money Concepts", "full-stack web development", "Cloudflare Workers", "Go", "TypeScript"],
+      "jobTitle": "Independent Builder"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yanstd888.github.io/#website",
+      "url": "https://yanstd888.github.io/",
+      "name": "Yanstd",
+      "publisher": { "@id": "https://yanstd888.github.io/#person" },
+      "inLanguage": "id"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu 9RouterX?",
+          "acceptedAnswer": { "@type": "Answer", "text": "9RouterX adalah AI gateway lokal berbasis Go dengan dashboard Svelte 5 ter-embed. Open source di github.com/yanstd888/9routerx, fork dari 9router-go dengan tambahan fitur per-key governance, circuit breaker tiga tingkat, semantic cache, dan token billing." }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana cara mendapatkan subdomain .ai.id gratis?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Lewat AICLUB di aiclub.ai.id. Pilih domain yang tersedia, daftar gratis, arahkan DNS ke hosting kamu. Panduan setup Cloudflare DNS lengkap ada di repo free-subdomain-aiclub-ai-id." }
+        },
+        {
+          "@type": "Question",
+          "name": "Untuk siapa humanizer-lint dibuat?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Untuk penulis dan developer yang ingin menandai tulisan yang terdengar seperti AI. Linter ini berjalan lokal tanpa dependensi, mendukung 8 bahasa, dan bisa dipakai sebagai skill untuk AI agent. Tersedia di npm dan skills.sh." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #0D1117;
+    --bg-raise: #131a23;
+    --line: #26303c;
+    --ink: #e6edf3;
+    --ink-dim: #a9b6c3;
+    --accent: #FFD23F;
+    --accent-ink: #0D1117;
+    --radius: 6px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  body.sans { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 22px; }
+
+  /* Header */
+  header { border-bottom: 1px solid var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; }
+  .brand { font-weight: 700; letter-spacing: 0.02em; color: var(--ink); }
+  .brand span { color: var(--accent); }
+  .navlinks { display: flex; gap: 22px; font-size: 13.5px; }
+  .navlinks a { color: var(--ink-dim); }
+  .navlinks a:hover { color: var(--ink); text-decoration: none; }
+  #fontToggle {
+    background: none; border: 1px solid var(--line); color: var(--ink-dim);
+    font: inherit; font-size: 12px; padding: 11px 16px; border-radius: var(--radius); cursor: pointer;
+  }
+  #fontToggle:hover { border-color: var(--accent); color: var(--ink); }
+
+  /* Hero */
+  .hero { padding: 64px 0 56px; }
+  .glyph {
+    color: var(--accent); white-space: pre; font-size: 11px; line-height: 1.15;
+    margin-bottom: 28px; overflow-x: auto; user-select: none;
+  }
+  h1 { font-size: clamp(26px, 5vw, 40px); line-height: 1.2; font-weight: 700; max-width: 21ch; }
+  h1 em { font-style: normal; color: var(--accent); }
+  .hero p.lead { margin-top: 18px; max-width: 58ch; color: var(--ink-dim); }
+  .hero p.lead strong { color: var(--ink); }
+  .hero-cta { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 11px 20px; border-radius: var(--radius);
+    font: inherit; font-size: 14px; font-weight: 600;
+  }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-primary:hover { text-decoration: none; filter: brightness(1.06); }
+  .btn-ghost { border: 1px solid var(--line); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--accent); text-decoration: none; }
+  .loc { margin-top: 26px; font-size: 13px; color: var(--ink-dim); }
+
+  /* Sections */
+  section { padding: 52px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 21px; font-weight: 700; margin-bottom: 8px; }
+  .sub { color: var(--ink-dim); font-size: 14px; margin-bottom: 30px; max-width: 62ch; }
+
+  /* Project ledger: baris mengalir, bukan kartu seragam */
+  .ledger { border-top: 1px solid var(--line); }
+  .row { display: grid; grid-template-columns: 240px 1fr; gap: 20px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+  .row h3 { font-size: 16px; font-weight: 700; }
+  .row h3 a { color: var(--ink); }
+  .row h3 a:hover { color: var(--accent); }
+  .tagline { color: var(--ink-dim); font-size: 13px; margin-top: 3px; }
+  .row .desc { font-size: 14px; color: var(--ink); max-width: 60ch; }
+  .facts { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12.5px; color: var(--ink-dim); }
+  .facts b { color: var(--ink); font-weight: 600; }
+  .row.hot h3 a { color: var(--accent); }
+  .row.hot { background: linear-gradient(90deg, rgba(255,210,63,0.05), transparent 65%); }
+.new { color: var(--accent-ink); background: var(--accent); padding: 1px 7px; border-radius: 3px; font-weight: 600; }
+
+  /* Network */
+  .net { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+  .net h3 { font-size: 14px; color: var(--ink-dim); font-weight: 600; margin-bottom: 12px; }
+  .net ul { list-style: none; }
+  .net li { padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 14px; display: flex; justify-content: space-between; gap: 12px; }
+  .net li span { color: var(--ink-dim); font-size: 12.5px; text-align: right; }
+
+  /* FAQ */
+  details { border-bottom: 1px solid var(--line); padding: 16px 0; }
+  summary { cursor: pointer; font-weight: 600; font-size: 14.5px; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "+ "; color: var(--accent); font-weight: 700; }
+  details[open] summary::before { content: "- "; }
+  details p { margin-top: 10px; color: var(--ink-dim); font-size: 14px; max-width: 65ch; }
+
+  /* Footer */
+  footer { border-top: 1px solid var(--line); padding: 30px 0 44px; color: var(--ink-dim); font-size: 13px; }
+  footer .f-line { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+  @media (max-width: 720px) {
+    .row { grid-template-columns: 1fr; gap: 8px; }
+    .net { grid-template-columns: 1fr; gap: 28px; }
+    .glyph { font-size: 7.2px; }
+    .navlinks { display: none; }
+    .nav { justify-content: space-between; }
+    .hero { padding: 44px 0 40px; }
+    section { padding: 40px 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">yanstd<span>.builder</span></a>
+    <nav class="navlinks" aria-label="Navigasi utama">
+      <a href="#proyek">Proyek</a>
+      <a href="#jaringan">Jaringan</a>
+      <a href="#tanya">Tanya</a>
+      <a href="https://github.com/yanstd888">GitHub</a>
+    </nav>
+    <button id="fontToggle" type="button" aria-label="Ganti jenis huruf ke sans-serif">mono</button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <pre class="glyph" aria-hidden="true">
+██╗   ██╗ █████╗ ███╗   ██╗███████╗████████╗██████╗
+╚██╗ ██╔╝██╔══██╗████╗  ██║██╔════╝╚══██╔══╝██╔══██╗
+ ╚████╔╝ ███████║██╔██╗ ██║███████╗   ██║   ██║  ██║
+  ╚██╔╝  ██╔══██║██║╚██╗██║╚════██║   ██║   ██║  ██║
+   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝   ╚══════╝╚═════╝</pre>
+    <h1>Builder independen yang <em>memakai produknya sendiri</em>.</h1>
+    <p class="lead">Saya <strong>Muhammad Dian (Yanstd)</strong> dari Batam, Indonesia. Saya membangun gateway AI open source, infrastruktur subdomain gratis, linter prose, dan Expert Advisor MetaTrader 5. Semua proyek di halaman ini berjalan dan saya pakai sendiri setiap hari.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#proyek">Lihat proyek aktif</a>
+      <a class="btn btn-ghost" href="https://aiclub.ai.id/">Buka AICLUB</a>
+    </div>
+    <p class="loc">Batam, Kepulauan Riau, Indonesia · Waktu WIB · Ngobrol santai soal proyek: <a href="https://t.me/aiclub_id">Telegram @aiclub_id</a></p>
+  </div>
+
+  <section id="proyek">
+    <div class="wrap">
+      <h2>Proyek aktif</h2>
+      <p class="sub">Urutan bukan peringkat: dari gateway yang paling baru dibangun sampai EA yang paling lama di-backtest. Angka bintang diambil langsung dari GitHub saat halaman ini ditulis.</p>
+      <div class="ledger">
+
+        <article class="row hot">
+          <div>
+            <h3><a href="https://github.com/yanstd888/9routerx">9RouterX</a></h3>
+            <p class="tagline">AI gateway lokal, Go + Svelte 5</p>
+          </div>
+          <div>
+            <p class="desc">Gateway AI yang jalan di komputer sendiri: routing multi-provider, dashboard ter-embed, per-key cost limit, circuit breaker tiga tingkat, dan semantic cache. Fork dari 9router-go dengan set fitur yang lebih lengkap.</p>
+            <p class="facts"><span><b>8</b> bintang GitHub</span><span>open source MIT</span><span>rilis v1.0.0</span><span class="new">rilis terbaru</span></p>
+          </div>
+        </article>
+
+        <article class="row">
+          <div>
+            <h3><a href="https://github.com/yanstd888/humanizer-lint">humanizer-lint</a></h3>
+            <p class="tagline">Linter prose anti-nada-AI</p>
+          </div>
+          <div>
+            <p class="desc">Menandai kalimat yang kaku atau terdengar buatan sebelum kamu kirim artikel, caption, atau UI text. Jalan lokal tanpa dependensi, 8 bahasa, dipakai sebagai skill oleh AI agent.</p>
+            <p class="facts"><span><b>100</b> bintang GitHub</span><span>tersedia di npm & skills.sh</span><span>zero dependency</span></p>
+          </div>
+        </article>
+
+        <article class="row">
+          <div>
+            <h3><a href="https://github.com/yanstd888/institutional-smc-scalper-mt5">Institutional SMC Scalper MT5</a></h3>
+            <p class="tagline">Expert Advisor XAUUSD untuk MetaTrader 5</p>
+          </div>
+          <div>
+            <p class="desc">EA Smart Money Concepts (SMC/ICT) dan MSNR untuk gold, dengan backtest real-tick enam setengah tahun. Non-martingale, risiko dihitung per posisi.</p>
+            <p class="facts"><span><b>37</b> bintang GitHub</span><span>backtest 6.5 tahun real-tick</span><span>PF 1.42, max DD 10.2%</span></p>
+          </div>
+        </article>
+
+        <article class="row">
+          <div>
+            <h3><a href="https://github.com/yanstd888/free-subdomain-aiclub-ai-id">AICLUB Free Subdomains</a></h3>
+            <p class="tagline">Subdomain developer gratis + panduan DNS</p>
+          </div>
+          <div>
+            <p class="desc">Layanan subdomain gratis dengan pilihan .ai.id, .web.id, .cv, dan lainnya, plus panduan setup Cloudflare DNS langkah demi langkah.</p>
+            <p class="facts"><span><b>35</b> bintang GitHub</span><span>4+ pilihan TLD</span><span>klaim via aiclub.ai.id</span></p>
+          </div>
+        </article>
+
+        <article class="row">
+          <div>
+            <h3><a href="https://github.com/yanstd888/node2mint">Node2Mint</a></h3>
+            <p class="tagline">Marketplace AI self-hosted</p>
+          </div>
+          <div>
+            <p class="desc">Marketplace AI dengan token billing engine, gateway API kompatibel OpenAI, failover provider otomatis, dan sistem komisi afiliasi. Open source.</p>
+            <p class="facts"><span><b>32</b> bintang GitHub</span><span>open source MIT</span><span>QRIS + gateway</span></p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="jaringan">
+    <div class="wrap">
+      <h2>Jaringan & kontak</h2>
+      <p class="sub">Semua hal di bawah ini saya kelola sendiri. Kalau mau diskusi proyek, kolaborasi, atau jasa web, jalur tercepatnya Telegram.</p>
+      <div class="net">
+        <div>
+          <h3>Produk & layanan</h3>
+          <ul>
+            <li><a href="https://aiclub.ai.id/">aiclub.ai.id</a><span>direktori AI + subdomain gratis</span></li>
+            <li><a href="https://toko.aiclub.ai.id">toko.aiclub.ai.id</a><span>marketplace aplikasi</span></li>
+            <li><a href="https://yans.ai.id/">yans.ai.id</a><span>tautan & layanan resmi</span></li>
+            <li><a href="https://yanstd.web.id/">yanstd.web.id</a><span>portfolio web dev</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Komunitas & profil</h3>
+          <ul>
+            <li><a href="https://t.me/aiclub_id">t.me/aiclub_id</a><span>kanal Telegram</span></li>
+            <li><a href="https://t.me/aiclubstorebot">t.me/aiclubstorebot</a><span>bot toko</span></li>
+            <li><a href="https://github.com/yanstd888">github.com/yanstd888</a><span>semua repo</span></li>
+            <li><a href="https://github.com/sponsors/yanstd888">GitHub Sponsors</a><span>dukung open source</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tanya">
+    <div class="wrap">
+      <h2>Tanya yang sering masuk</h2>
+      <p class="sub">Pertanyaan asli yang datang lewat Telegram dan GitHub, dijawab singkat.</p>
+      <details>
+        <summary>Apa itu 9RouterX dan untuk siapa?</summary>
+        <p>Gateway AI lokal berbasis Go: satu titik masuk OpenAI-compatible untuk semua provider, dengan dashboard, cost limit per key, dan failover. Cocok untuk developer yang sudah bayar banyak API key dan ingin satu dashboard untuk mengaturnya. Repo: github.com/yanstd888/9routerx.</p>
+      </details>
+      <details>
+        <summary>Bagaimana cara mendapatkan subdomain .ai.id gratis?</summary>
+        <p>Buka aiclub.ai.id, pilih subdomain yang tersedia, daftar gratis, lalu arahkan DNS-nya ke hosting kamu (Cloudflare, Vercel, GitHub Pages, semuanya bisa). Panduan lengkapnya ada di repo free-subdomain-aiclub-ai-id.</p>
+      </details>
+      <details>
+        <summary>Untuk siapa humanizer-lint dibuat?</summary>
+        <p>Untuk siapa pun yang tulisannya sering dikirim lewat AI dan ingin memastikan hasilnya tidak terdengar seperti robot. Linter berjalan lokal, tanpa upload, 8 bahasa, dan bisa dipasang sebagai skill AI agent lewat npm atau skills.sh.</p>
+      </details>
+      <details>
+        <summary>Apakah EA MT5-nya pakai martingale?</summary>
+        <p>Tidak. Institutional SMC Scalper MT5 memakai risiko tetap per posisi, tanpa martingale dan tanpa grid. Backtest real-tick 6,5 tahun tersedia di repo agar kamu bisa cek sendiri angkanya.</p>
+      </details>
+      <details>
+        <summary>Mau ikut kolaborasi atau butuh jasa web. Hubungi ke mana?</summary>
+        <p>Telegram @aiclub_id untuk komunitas, atau lewat formulir konsultasi di yanstd.web.id. Untuk urusan repositori, buka issue langsung di repo terkait.</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap f-line">
+    <span>yanstd888.github.io · dibangun di Batam, Indonesia</span>
+    <span><a href="https://github.com/yanstd888/yanstd888.github.io">source</a> · <a href="https://yans.ai.id/">yans.ai.id</a></span>
+  </div>
+</footer>
+
+<script>
+  // Toggle font mono/sans: preferensi aksesibilitas, dipersist di localStorage.
+  (function () {
+    var btn = document.getElementById('fontToggle');
+    if (!btn) return;
+    var KEY = 'yanstd-font';
+    function apply(mode) {
+      document.body.classList.toggle('sans', mode === 'sans');
+      btn.textContent = mode === 'sans' ? 'sans' : 'mono';
+      btn.setAttribute('aria-label', mode === 'sans'
+        ? 'Kembali ke jenis huruf monospace'
+        : 'Ganti jenis huruf ke sans-serif');
+    }
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    if (saved) apply(saved);
+    btn.addEventListener('click', function () {
+      var next = document.body.classList.contains('sans') ? 'mono' : 'sans';
+      apply(next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

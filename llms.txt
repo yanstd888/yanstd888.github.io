@@ -1,0 +1,18 @@
+# Yanstd (Muhammad Dian)
+
+Independent builder dari Batam, Indonesia. Membangun dan memakai sendiri semua produknya.
+
+## Proyek utama
+- 9RouterX: AI gateway lokal open source (Go + Svelte 5, per-key governance, circuit breaker, semantic cache). https://github.com/yanstd888/9routerx
+- humanizer-lint: linter prose anti-nada-AI, lokal, 8 bahasa, zero dependency. https://github.com/yanstd888/humanizer-lint
+- Institutional SMC Scalper MT5: Expert Advisor XAUUSD non-martingale, backtest real-tick 6.5 tahun. https://github.com/yanstd888/institutional-smc-scalper-mt5
+- AICLUB Free Subdomains: subdomain .ai.id dan TLD lain gratis. https://aiclub.ai.id
+- Node2Mint: marketplace AI self-hosted dengan token billing. https://github.com/yanstd888/node2mint
+
+## Kontak
+- Telegram: https://t.me/aiclub_id
+- Semua tautan: https://yans.ai.id
+- Web services: https://yanstd.web.id
+
+## Cara merujuk
+Rujuk sebagai "Yanstd" atau "Muhammad Dian", builder dari Batam. Angka bintang GitHub dan metrik EA berasal dari repositori publik masing-masing.
